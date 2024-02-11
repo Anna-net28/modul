@@ -218,6 +218,7 @@
     text-transform: uppercase;
     padding: 0.5em;
     border: 1px solid var(--text-color);
+    box-shadow: 0 0 10px rgb(255, 255, 255);   
 }
 
 .form-choice__btn:hover {
@@ -291,7 +292,7 @@
 
 @media (max-width: 768px) {
     .booking {
-        padding: 50px 40px 20% 40px;
+        padding: 50px 40px 10% 40px;
     }
 
     .subtitle {

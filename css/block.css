@@ -1,3 +1,6 @@
+.block {
+    padding-top: 100px;
+}
 .about-us__column {
     display: grid;
     grid-template-columns: 50.9% 1fr 1fr;
@@ -148,6 +151,9 @@
 }
 
 @media (max-width: 1024px) {
+    .block {
+        padding-top: 70px;
+    }
     .about-us__column {
         grid-template-rows: 2fr 1fr 1fr;
     }
@@ -183,6 +189,9 @@
 }
 
 @media (max-width: 768px) {
+    .block {
+        padding-top: 60px;
+    }
     .about-us__column {
         grid-template-rows: 2fr 2fr 1fr 1fr;
     }
