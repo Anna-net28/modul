@@ -1,0 +1,460 @@
+.banner__container {
+    padding: 0 9% 100px 9%;
+    max-width: 100%;
+}
+
+.banner__block {
+    position: relative;
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    padding-bottom: 10%;
+}
+
+.banner__block::after {
+    content: "";
+    background: url(../img/banner.png) no-repeat;
+    max-width: 675px;
+    width: 65%;
+    height: 90%;
+    background-size: contain;
+    position: absolute;
+    top: 10%;
+    left: 43%;
+}
+
+.banner__title {
+    font-size: var(--size-n);
+    font-weight: 900;
+    line-height: 150px;
+    letter-spacing: -0.1em;
+    text-align: left;
+}
+
+.banner__sub-title {
+    font-size: var(--texst-size-k);
+    font-weight: 400;
+    line-height: 50px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-left: 9%;
+}
+
+.banner__group {
+    display: flex;
+    gap: 43px;
+    align-items: flex-end;
+    justify-content: flex-start;
+}
+
+.group__number {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    max-width: 100%;
+    width: 17%;
+}
+
+.group__text-number {
+    color: var(--color-g);
+    font-size: var(--texst-size-x);
+    font-weight: 900;
+    line-height: normal;
+    text-align: center;
+}
+
+.group__text {
+    color: var(--text-color);
+    text-align: center;
+    font-size: var(--texst-size-g);
+    font-weight: 400;
+    line-height: normal;
+}
+
+.group__text-new {
+    color: var(--color-g);
+    font-size: var(--texst-size-n);
+    font-weight: 900;
+    font-variant: all-small-caps;
+    line-height: normal;
+    text-align: center;
+}
+
+.banner__button {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 130px;
+}
+
+.banner__booking {
+    border-radius: 10px;
+    background: var(--color-primary);
+    padding: 25px 69px;
+    box-shadow: 0 0 0 5px var(--color-primary), 0 0 10px 5px var(--color-primary);
+    border: 1px solid var(--color-primary);
+    color: var(--text-color);
+    font-size: var(--texst-size-s);
+    font-weight: 700;
+    line-height: 30px;
+    text-transform: uppercase;
+}
+
+.banner__booking:hover,
+.banner__booking:focus {
+    background: var(--color-l);
+    transition: 0.8s;
+}
+
+.banner__booking:active {
+    background: var(--color-a);
+    transition: 0.8s;
+}
+
+.banner__down {
+    top: 85%;
+    left: 43%;
+    z-index: 50;
+    position: absolute;
+    border: none;
+    max-width: 100%;
+    background: none;
+    padding: 0;
+}
+
+.down {
+    border: 1px solid var(--text-color);
+    border-radius: 50%;
+    min-width: 67px;
+    min-height: 67px;
+    display: flex;
+}
+
+.down::after,
+.down::before {
+    content: '';
+    width: 25px;
+    height: 2px;
+    background-color: var(--text-color);
+    z-index: 50;
+    position: absolute;
+    top: 52%;
+}
+
+.down::before {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    left: 14px;
+}
+
+.down::after {
+    transform: rotate(-50deg);
+    -webkit-transform: rotate(-50deg);
+    left: 30px;
+}
+
+.down:hover {
+    background: var(--text-color);
+    border: none;
+    transition: 0.8s;
+}
+
+.down:hover::after,
+.down:hover::before {
+    content: "";
+    background-color: var(--color-a);
+    transition: 0.8s;
+}
+
+.down:active {
+    border: none;
+    background: var(--color-p);
+    transition: 0.8s;
+}
+
+.down:active::after,
+.down:active::before {
+    content: "";
+    background-color: var(--text-color);
+    transition: 0.8s;
+}
+
+.banner__down:focus {
+    border: 2px solid var(--color-g);
+    width: 99px;
+    height: 99px;
+    transition: 0.8s;
+}
+
+.down:focus {
+    background-color: none;
+    border: 1px solid var(--text-color);
+    transition: 0.8s;
+}
+
+.banner__link {
+    color: rgb(255, 255, 255);
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 28px;
+    padding-left: 9%;
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.banner__link::before {
+    content: "";
+    background: url(../img/Arrow.svg) no-repeat;
+    display: inline-flex;
+    align-items: center;
+    width: 30px;
+    height: auto;
+    background-size: contain;
+    background-position: 50%;
+}
+
+.banner__img {
+    width: 100%;
+}
+
+.banner__image {
+    padding-bottom: 7%;
+    position: relative;
+}
+
+.banner__text {
+    text-align: center;
+    padding: 7% 15% 0 15%;
+}
+
+.banner__title-img {
+    position: absolute;
+    top: 35%;
+    left: 33%;
+}
+
+.banner__title-link {
+    color: rgb(255, 255, 255);
+    font-size: 90px;
+    font-weight: 700;
+    line-height: 80px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+@media (max-width: 1024px) {
+    .banner__container {
+        padding: 0 60px 83px 60px;
+    }
+
+    .banner__block::after {
+        content: "";
+        left: 50%;
+        max-width: 453px;
+        top: 13%;
+    }
+
+    .banner__button {
+        margin-top: 8%;
+    }
+
+    .banner__booking {
+        padding: 17px 48px;
+        font-size: calc(22px + (4 + 4 * 0.7) * ((100vw - 1024px) / 1440));
+    }
+
+    .banner__down {
+        top: 80%;
+        left: 47%;
+    }
+
+    .banner__title {
+        font-size: calc(120px + (30 + 30 * 0.7) * ((100vw - 1024px) / 1440));
+        line-height: 100%;
+    }
+
+    .banner__sub-title {
+        line-height: 30px;
+        font-size: calc(22px + (6 + 6 * 0.7) * ((100vw - 1024px) / 1440));
+    }
+
+    .group__text-number {
+        font-size: calc(80px + (20 + 20 * 0.7) * ((100vw - 1024px) / 1440));
+    }
+
+    .group__text-new {
+        font-size: calc(60px + (15 + 15 * 0.7) * ((100vw - 1024px) / 1440));
+    }
+
+    .group__text {
+        font-size: calc(26px + (4 + 4 * 0.7) * ((100vw - 1024px) / 1440));
+    }
+
+    .banner__title-img {
+        top: 30%;
+        left: 25%;
+    }
+
+    .banner__link {
+        padding-left: 60px;
+    }
+
+    .banner__text {
+        font-size: calc(20px + (4 + 4 * 0.7) * ((100vw - 1024px) / 1440))
+    }
+
+}
+
+@media (max-width: 959px) {
+
+    .banner__container {
+        padding: 0 40px 80px 40px;
+    }
+
+    .banner__title-link {
+        font-size: calc(60px + (30 + 30 * 0.7) * ((100vw - 768px) / 1440));
+    }
+
+    .banner__title {
+        font-size: calc(86px + (64 + 64 * 0.7) * ((100vw - 768px) / 1440));
+        line-height: 100%;
+        letter-spacing: -8.6px;
+    }
+
+    .banner__sub-title {
+        font-size: calc(18px + (10 + 10 * 0.7) * ((100vw - 768px) / 1440));
+    }
+
+    .group__text-number {
+        font-size: calc(75px + (25 + 25 * 0.7) * ((100vw - 768px) / 1440));
+    }
+
+    .group__text-new {
+        font-size: calc(50px + (25 + 25 * 0.7) * ((100vw - 768px) / 1440));
+    }
+
+    .group__text {
+        font-size: calc(16px + (14 + 14 * 0.7) * ((100vw - 768px) / 1440));
+    }
+
+    .banner__text {
+        font-size: calc(16px + (8 + 8 * 0.7) * ((100vw - 768px) / 1440));
+    }
+
+    .banner__link {
+        padding-left: 4%;
+        font-size: calc(16px + (6 + 6 * 0.7) * ((100vw - 768px) / 1440));
+    }
+
+    .banner__button {
+        margin-top: 10%;
+    }
+
+    .banner__booking {
+        padding: 1.5% 5% 1.5% 5%;
+        font-size: calc(16px + (10 + 10 * 0.7) * ((100vw - 768px) / 1440));
+    }
+
+    .banner__down {
+        display: none;
+    }
+
+    .banner__block::after {
+        content: '';
+        left: 40%;
+        width: 50%;
+        top: 11%;
+    }
+
+    .banner__group {
+        gap: 5%;
+    }
+}
+
+@media (max-width: 668px) {
+    .banner__container {
+        padding: 0 20px 46px 20px;
+    }
+
+    .banner__block {
+        row-gap: 5%;
+    }
+
+    .banner__text {
+        font-size: calc(16px + (8 + 8 * 0.7) * ((100vw - 320px) / 1440))
+    }
+
+    .banner__title-link {
+        font-size: calc(30px + (60 + 60 * 0.7) * ((100vw - 320px) / 1440));
+    }
+
+    .banner__title {
+        font-size: calc(35px + (115 + 115 * 0.7) * ((100vw - 320px) / 1440));
+        line-height: 100%;
+        letter-spacing: -2px;
+    }
+
+    .banner__booking {
+        font-size: calc(10px + (16 + 16 * 0.7) * ((100vw - 320px) / 1440));
+        padding: 1.5% 2.5% 1.5% 2.5%;
+        line-height: 12px;
+        border-radius: 4px;
+        box-shadow: 0 0 0 1px var(--color-primary), 0 0 7px 1px var(--color-primary);
+    }
+
+    .banner__sub-title {
+        font-size: 10px;
+        line-height: 14px;
+        margin-left: 6%;
+    }
+
+    .banner__text {
+        padding: 30px 20px 0 20px;
+    }
+
+    .banner__image {
+        padding-bottom: 7%;
+    }
+
+    .banner__group {
+        gap: 20px;
+    }
+
+    .group__text-number {
+        font-size: 26px;
+    }
+
+    .group__text-new {
+        font-size: 22px;
+    }
+
+    .banner__block::after {
+        content: '';
+        left: 49%;
+        top: 13%;
+        max-width: 409px;
+        width: 50%;
+    }
+
+}
+
+@media (max-width: 500px) {
+    .banner__title-img {
+        top: 18%;
+        left: 25%;
+    }
+
+    .banner__link {
+        line-height: 16px;
+        margin-bottom: 15px;
+        gap: 6px;
+    }
+
+    .banner__link::before {
+        content: "";
+        width: 5%;
+    }
+}
