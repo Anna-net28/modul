@@ -39,12 +39,16 @@
     border: 1px solid var(--text-color);
     border-radius: 50%;
     position: relative;
+    display: block;
+    padding: 1em;
 }
 
 .link__purple {
     border: 1px solid var(--color-primary);
     border-radius: 50%;
     position: relative;
+    display: block;
+    padding: 1em;
 }
 
 .plus::before,
@@ -72,12 +76,12 @@
 
 .plus::before {
     content: "";
-    left: 29%;
+    left: 26%;
 }
 
 .plus::after {
     content: "";
-    left: 29%;
+    left: 26%;
     transform: rotate(90deg);
 }
 
