@@ -183,14 +183,13 @@
 
 .banner__down:focus {
     border: 2px solid var(--color-g);
-    width: 99px;
-    height: 99px;
     transition: 0.8s;
+    background: none;
 }
 
 .down:focus {
-    background-color: none;
     border: 1px solid var(--text-color);
+    background: none;
     transition: 0.8s;
 }
 
