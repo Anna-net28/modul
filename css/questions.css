@@ -157,21 +157,4 @@
         padding: 12px 5px 12px 20px;
     }
 
-    .link__purple,
-    .link__white {
-        width: 30px;
-        height: 30px;
-    }
-
-    .plus::after,
-    .plus::before {
-        width: 13px;
-        left: 7px;
-    }
-
-    .white::after,
-    .white::before {
-        width: 13px;
-        left: 9px;
-    }
 }
