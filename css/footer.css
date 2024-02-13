@@ -1,10 +1,5 @@
 .footer {
     background: linear-gradient(180deg, var(--color-b) 0%, var(--c1) 100%);
-    padding-top: 55px;
-}
-
-.footer__container {
-    padding: 0 9% 0 9%;
 }
 
 .footer__contact {
@@ -140,14 +135,6 @@
 }
 
 @media (max-width: 1024px) {
-    .footer__container {
-        padding: 0 60px 0 60px;
-    }
-
-    .footer {
-        padding: 0;
-    }
-
     .contacts__link {
         padding-left: 13px;
     }
@@ -162,10 +149,6 @@
 }
 
 @media (max-width: 768px) {
-    .footer__container {
-        padding: 0 40px 0 40px;
-    }
-
     .footer-padding {
         padding-top: 10px;
     }
@@ -214,10 +197,6 @@
 }
 
 @media (max-width: 320px) {
-    .footer__container {
-        padding: 0 20px 0 20px;
-    }
-
     .footer__contact {
         margin-bottom: 63px;
     }

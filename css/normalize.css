@@ -183,7 +183,7 @@ textarea {
 
 .container {
     max-width: 100%;
-    padding: 0 9% 100px 9%;
+    padding: 100px 9% 0 9%;
 }
 
 .title {
@@ -256,7 +256,7 @@ textarea {
 
 @media (max-width: 1024px) {
     .container {
-        padding: 0 60px 70px 60px;
+        padding: 70px 60px 0 60px;
     }
 
     .title-size {
@@ -272,7 +272,7 @@ textarea {
 
 @media (max-width: 768px) {
     .container {
-        padding: 0 40px 60px 40px;
+        padding: 60px 40px 0 40px;
     }
 
     .title {
@@ -289,7 +289,7 @@ textarea {
 
 @media (max-width: 668px) {
     .container {
-        padding: 0 20px 30px 20px;
+        padding: 30px 20px 0 20px;
     }
 
     .title {

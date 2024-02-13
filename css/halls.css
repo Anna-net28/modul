@@ -1,5 +1,6 @@
 .halls {
     height: auto;
+    margin-bottom: 100px;
 }
 
 .halls-img {
@@ -44,6 +45,9 @@
 
 
 @media (max-width: 1245px) {
+    .halls {
+        margin-bottom: 71px;
+    }
     .title__link {
         font-size: calc(50px + (20 + 20 * 0.7) * ((100vw - 1245px) / 1440));
         line-height: 60px;
@@ -51,6 +55,9 @@
 }
 
 @media (max-width: 768px) {
+    .halls {
+        margin-bottom: 63px;
+    }
     .halls-img {
         gap: 8px;
     }
@@ -64,6 +71,9 @@
 }
 
 @media (max-width: 628px) {
+    .halls {
+        margin-bottom: 30px;
+    }
     .line-group {
         display: flex;
         flex-wrap: wrap;
