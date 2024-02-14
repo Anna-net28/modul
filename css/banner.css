@@ -242,6 +242,7 @@
     text-align: center;
     text-transform: uppercase;
 }
+
 @media (min-width: 1600px) {
     .banner__container {
         width: 100%;
@@ -263,9 +264,9 @@
         top: 13%;
     }
 
-   .banner__group {
-    margin-bottom: 8%;
-   }
+    .banner__group {
+        margin-bottom: 8%;
+    }
 
     .banner__booking {
         padding: 17px 48px;
@@ -357,7 +358,7 @@
 
     .banner__group {
         margin-bottom: 10%;
-       }
+    }
 
     .banner__booking {
         padding: 1.5% 5% 1.5% 5%;
