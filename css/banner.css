@@ -242,6 +242,14 @@
     text-align: center;
     text-transform: uppercase;
 }
+@media (min-width: 1600px) {
+    .banner__container {
+        width: 100%;
+        max-width: 1400px;
+        margin: 0 auto;
+        padding: 0;
+    }
+}
 
 @media (max-width: 1024px) {
     .banner__container {

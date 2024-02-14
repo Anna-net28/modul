@@ -1,6 +1,6 @@
 .booking {
     background: var(--color-f);
-    padding: 80px 9% 80px 9%;
+    padding-bottom: 80px;
 }
 
 .hall {
@@ -259,7 +259,7 @@ background: rgb(108, 2, 135);
 
 @media (max-width: 1024px) {
     .booking {
-        padding: 60px;
+        padding-bottom: 60px;
     }
 
     .hall__btn {
@@ -311,7 +311,7 @@ background: rgb(108, 2, 135);
 
 @media (max-width: 768px) {
     .booking {
-        padding: 50px 40px 10% 40px;
+        padding-bottom: 10%;
     }
 
     .subtitle {
@@ -463,7 +463,7 @@ background: rgb(108, 2, 135);
 
 @media (max-width: 320px) {
     .booking {
-        padding: 30px 20px 20% 20px;
+        padding-bottom: 20%;
     }
 
     .hall {

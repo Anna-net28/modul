@@ -254,6 +254,17 @@ textarea {
     /*26*/
 }
 
+@media (min-width: 1600px) {
+    .container {
+        width: 100%;
+        min-width: 1400px;
+        margin: 0 auto;
+        padding: 0;
+        padding-top: 5%;
+    }
+
+}
+
 @media (max-width: 1024px) {
     .container {
         padding: 70px 60px 0 60px;
@@ -302,3 +313,4 @@ textarea {
         font-size: calc(14px + (24 + 24 * 0.7) * ((100vw - 320px) / 1440));
     }
 }
+
